@@ -1,0 +1,57 @@
+:root {
+// colors
+--color-bkgrd: #d9d9d9;
+--color-primary: #66e0ff;
+--color-primary-light:  #b3f0ff;
+--color-secondary: #101d2c;
+--color-variant: #006699;
+--color-variant-2: #ffac80;
+--color-variant-3: #00ff99;
+--color-black: #000;
+--color-white: #fff;
+
+--color-gray-1: #404040;
+--color-gray-2: #595959;
+--color-gray-3: #eee;
+--color-gray-4: #b3b3b3;
+--color-gray-5: #333;
+
+
+//typography
+--font-primary: "open sans", sans-serif, helvetica;
+
+--color-debug1: turquoise;
+--color-debug-2: #ff3399;
+--border-debug-1: 2px dotted red;
+--border-debug-2: 1px solid blue;
+
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.4;
+    color: var(--color-black);
+    background-image: linear-gradient(rgba(102, 224, 255, 0.3),
+                    rgba(179, 240, 255, 0.5)),
+                    url("https://source.unsplash.com/oaQ2mTeaP7o");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+    @media only screen and (min-width: 37.5em) {
+        line-height: 1.6;
+    }
+}
