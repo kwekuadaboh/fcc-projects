@@ -1,0 +1,12 @@
+{
+  "name": "product-landing-page",
+  "version": "1.0.0",
+  "description": "FCC project 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -w sass/main.scss css/styles.css"
+  },
+  "author": "kweku Adaboh",
+  "license": "ISC"
+}
