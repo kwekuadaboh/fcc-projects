@@ -1,5 +1,4 @@
-
-// colors
+// COLORS
 $color-bkgrd: #d9d9d9;
 $color-primary:  #00ffff;
 $color-primary-light:  #ccffff;
@@ -18,8 +17,12 @@ $color-gray-3: #eee;
 $color-gray-4: #b3b3b3;
 $color-gray-5: #333;
 
+//// UTILIY CLASSES
+.u-mb-m { margin-bottom: 1rem;}
+.u-mb-l { margin-bottom: 2rem;}
+.u-mb-xl { margin-bottom: 2.7rem;}
 
-//typography
+//TYPOGRAGHY
 $font-primary: "ubuntu", sans-serif, helvetica;
 
 $color-debug1: turquoise;
@@ -27,7 +30,11 @@ $color-debug-2: #ff3399;
 $border-debug-1: 2px dotted red;
 $border-debug-2: 1px solid blue;
 
-
+/////////////////// MEDIA QUERIES BREAKPOINT  
+$bp-desktop: 75em;  //1200px
+$bp-minDesktop: 58.125em;  //1000px
+$bp-tablet: 46.875em;   //750px
+$bp-phablet: 34.375em;  // 550px
 
 *,
 *::before,
@@ -39,10 +46,11 @@ $border-debug-2: 1px solid blue;
 
 html {
     box-sizing: border-box;
-    // font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
     font-family: $font-primary;
-
+    line-height: 1.5;
+    background-color: $color-bkgrd;
 }

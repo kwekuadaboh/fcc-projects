@@ -1,0 +1,235 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: $color-gray-4;
+
+    @media only screen and (min-width: $bp-tablet) {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__logo-container {
+        & img {
+            width: 20em;
+            margin: 0.57rem auto;
+            display: block;
+        }
+    }
+}
+
+.nav-bar {
+    @media only screen and (min-width: $bp-tablet) {
+        margin-left: auto;
+
+    }
+}
+
+.nav-bar__menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+
+// TYPOGRAPHY 
+.heading-primary   {
+    font-size: 2.75rem;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+
+    @media only screen and (min-width: $bp-phablet) {
+        text-align: center;
+    }
+
+    & span {
+        background-image: linear-gradient(to bottom, $color-primary,$color-gray-1 );
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    & .t-mark {
+        color:$color-secondary-dark;
+        font-weight: 400;
+        font-size: 2.0rem;
+    }
+}
+
+// FORM ELEMENT 
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.form-control {
+    display: block;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    border: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &:focus {
+        outline: 1px var(--color-primary-light) solid;
+        box-shadow: 0 0 5px #42bbd9;
+    }      
+}
+
+.service__list {
+    font-size: 1.6rem;
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+
+    &--logo-svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0rem 1rem;
+        margin-bottom: -1.2rem;
+        font-size: 3rem;
+        fill: $color-secondary-dark;
+    }
+
+    & ul {
+
+        list-style: square;
+        margin-left: 2rem;
+    }
+}
+
+.section-Ai {
+    & h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    & iframe {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 90vw;
+
+        @media only screen and (min-width: $bp-tablet) {
+            max-width: 60rem;
+        }    
+    }
+}
+
+.section-pricing {
+
+    & .heading-4 {
+        text-align: center;
+        font-size: 2rem;
+        background-image: linear-gradient(to right, $color-gray-1, $color-icon);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+       
+    }
+
+    & .price {
+        font-size: 2.2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    & .btn-price {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.section-pricing {
+    
+    @media only screen and (min-width: $bp-tablet) {
+        max-width: 100vw;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5.5rem;
+    }
+
+    @media only screen and (min-width: $bp-tablet) {
+        & div.product-price  {
+            margin:  3rem auto 5vw auto;
+        }
+    }
+}
+
+.product-price {
+    border: 1px solid $color-black;
+    border-radius: 3px;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;    
+    } 
+
+     @media only screen and (min-width: $bp-phablet) {
+        max-width: 350px;  
+    }
+
+    @media only screen and (min-width: $bp-tablet) {
+        &:last-of-type {   //Reverse the margin-bottom 
+            margin-bottom: 2rem;
+        }
+
+        max-width: 30rem;
+        margin-bottom: 4rem;
+    }
+
+    @media only screen and (min-width: $bp-minDesktop) {
+        max-width: 23%;
+    }
+
+}
+
+
+
+.footer {
+
+    & ul {
+        list-style-type: none;
+
+        @media only screen and (min-width: $bp-phablet) {
+            text-align: center;
+            max-width: 50rem;
+            margin: 0 auto;
+        } 
+
+    }
+
+    & div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    & a:link,
+    & a:visited {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        padding: 0.75rem 1rem;
+        transition: all 550ms;
+    }
+
+    & a:hover {
+        transform: translateY(-2px);
+        color: $color-gray-1;
+    }
+
+    & p {
+        text-align: center;  
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,43 @@
+.nav-link:link,
+.nav-link:visited {
+    color: $color-black;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 0.5rem 3rem;
+
+    &:hover {
+        color: lighten($color-black, 40%);
+        transform: translateY(-2px);
+        transition: all 250ms;
+    }
+
+    &:active {
+        transform: translateY(0px);
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    display: block;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: $color-secondary-dark;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 250ms;
+
+    &:focus,
+    &:active {
+        outline: none;
+        transform: translateY(-1px);
+    }
+
+    &:hover {
+        background-color: lighten($color-secondary-dark, 5%);
+    }
+   
+  
+}
